@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entre Brincadeiras e Memórias</title>
+  
+  <!-- Fonte bonita do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&family=Handlee&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8e1;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #ffd54f, #ff8a65, #e91e63, #9c27b0);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-family: 'Pacifico', cursive;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    header p {
+      margin-top: .5rem;
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #e91e63;
+      margin-top: 1.5rem;
+      font-size: 1.8rem;
+      border-bottom: 3px solid #ffd54f;
+      padding-bottom: 0.5rem;
+    }
+    .resultados h3 {
+      color: #9c27b0;
+      margin-bottom: .5rem;
+      font-size: 1.3rem;
+    }
+    .carousel {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      margin: 2rem auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .carousel-images {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .carousel-images img {
+      width: 100%;
+      flex-shrink: 0;
+    }
+    .carousel-buttons {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+    .carousel-buttons button {
+      background: rgba(255,255,255,0.7);
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-size: 1.2rem;
+      border-radius: 5px;
+    }
+    footer {
+      background: linear-gradient(135deg, #9c27b0, #e91e63);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    footer p {
+      margin: .3rem 0;
+    }
+    .galeria-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      justify-content: center; /* Centraliza os itens na grade */
+      gap: 1.5rem;
+      margin: 2rem auto;
+      max-width: 900px; /* Garante que a grade não seja muito larga */
+    }
+    .galeria-item {
+      background: white;
+      padding: 1rem;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+    .galeria-item:hover {
+      transform: translateY(-5px);
+    }
+    .galeria-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .intro-section,
+    .metodologia-section,
+    .conclusao-section {
+      padding: 2rem;
+      border-radius: 15px;
+      margin: 2rem 0;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .intro-section { background: linear-gradient(135deg, #fff3e0, #fce4ec); }
+    .metodologia-section { background: linear-gradient(135deg, #f3e5f5, #e8f5e8); }
+    .conclusao-section { background: linear-gradient(135deg, #fff8e1, #fce4ec); }
+    ul {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .galeria-memoria-titulo {
+      font-family: 'Handlee', cursive;
+      color: #e91e63;
+      margin-top: 1.5rem;
+      font-size: 2.2rem;
+      text-align: center;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Entre Brincadeiras e Memórias</h1>
+    <p>Infâncias que o tempo moldou</p>
+  </header>
+
+  <section>
+    <div class="intro-section">
+      <h2>Introdução</h2>
+      <p>Hoje em dia somos todos rodeados por tecnologias e aparelhos eletrônicos, mas nem sempre foi assim e durante muito tempo a infância das pessoas foi longe das telas, e aparelhos eletrônicos, o que não é mais uma realidade. Então, que importância isso teve na infância das pessoas, e como isso se reflete nos dias atuais?</p>
+    </div>
+
+    <h2>Objetivo</h2>
+    <p>Este estudo busca compreender como a infância se transformou ao longo das últimas décadas, a partir de mudanças culturais, sociais e tecnológicas. Além disso também busca valorizar o que permanece: os vínculos, o afeto e a importância da infância como base para toda a vida.</p>
+
+    <div class="metodologia-section">
+      <h2>Metodologia</h2>
+      <p>Para o desenvolvimento desse trabalho foi realizada uma pesquisa com quatro gerações: crianças, adolescentes, adultos e idosos; por meio de um questionário que abordou brincadeiras, escola, convivência familiar e contato com a tecnologia.</p>
+    </div>
+
+    <h2>Resultados</h2>
+    <div class="resultados">
+      <p>Cada geração viviu a infância de forma diferente. Os Baby Boomers cresceram em um mundo analógico, sem recursos digitais. A Geração X teve pouco contato com tecnologia, valorizando brincadeiras ao ar livre. A Geração Y acompanhou o início da internet, enquanto a Geração Z já cresceu conectada a celulares e redes sociais. Já a Geração Alpha nasce totalmente inserida no universo digital, com telas presentes desde os primeiros anos de vida.</p>
+      
+      <h3>Brincadeiras favoritas por geração</h3>
+      <p>Baby Boomers → bola de gude, amarelinha<br>
+         Geração X → bicicleta, futebol, videogame<br>
+         Geração Z → celular, Roblox, futebol<br>
+         Geração Alpha → celular, tablets, jogos digitais</p>
+
+      <h3>Onde costumavam brincar</h3>
+      <p>Rua, quintal, dentro de casa, escola.</p>
+
+      <h3>Com quem mais brincavam</h3>
+      <p>Amigos, irmãos, vizinhos, primos, sozinhos.</p>
+
+      <h3>Primeiro contato com a tecnologia</h3>
+      <p>Baby Boomers → rádio e TV<br>
+         Geração X → TV<br>
+         Geração Z → celular e internet<br>
+         Geração Alpha → telas antes dos 3 anos</p>
+    </div>
+
+    <!-- Carrossel de gráficos -->
+    <h2>Gráficos da Pesquisa</h2>
+    <div class="carousel">
+      <div class="carousel-images">
+        <img src="graficos/001.webp" alt="Brincadeiras favoritas - Geração Alpha">
+        <img src="graficos/002.webp" alt="Primeiro aparelho eletrônico - Geração Alpha">
+        <img src="graficos/003.webp" alt="Tempo livre - Geração Alpha">
+        <img src="graficos/004.webp" alt="Brincadeiras favoritas - Geração Z">
+        <img src="graficos/005.webp" alt="Primeiro aparelho eletrônico - Geração Z">
+        <img src="graficos/006.webp" alt="Tempo livre - Geração Z">
+        <img src="graficos/007.webp" alt="Brincadeiras favoritas - Geração X">
+        <img src="graficos/008.webp" alt="Primeiro aparelho eletrônico - Geração X">
+        <img src="graficos/009.webp" alt="Tempo livre - Geração X">
+        <img src="graficos/010.webp" alt="Brincadeiras favoritas - Baby Boomers">
+        <img src="graficos/011.webp" alt="Primeiro aparelho eletrônico - Baby Boomers">
+        <img src="graficos/012.webp" alt="Tempo livre - Baby Boomers">
+      </div>
+      <div class="carousel-buttons">
+        <button id="prev">&#10094;</button>
+        <button id="next">&#10095;</button>
+      </div>
+    </div>
+
+     <!-- Galeria de Memórias (agora como grid) -->
+    <h2 class="galeria-memoria-titulo">Galeria de Memórias</h2>
+    <div class="galeria-grid">
+      <div class="galeria-item">
+        <img src="foto1.jpg" alt="Foto 1">
+      </div>
+      <div class="galeria-item">
+        <img src="foto2.jpg" alt="Foto 2">
+      </div>
+    <div class="conclusao-section">
+      <h2>Conclusão</h2>
+      <p>Concluímos que, à medida que a internet e as tecnologias foram evoluindo, a infância também mudou, tornando-se cada vez mais marcada pela presença das telas. Esse contato precoce pode trazer benefícios, como aprendizado, criatividade e acesso à informação, mas também apresenta riscos, como a redução da convivência presencial, dificuldades de socialização e até isolamento. Por isso, entendemos que a infância não deve ser vista apenas como uma fase passageira, mas como um período essencial que influencia profundamente quem somos e como nos relacionamos com o mundo.</p>
+    </div>
+
+    <h2>Referências</h2>
+    <ul>
+      <li>Disponível em: <a href="https://www.jornaldepomerode.com.br/diferencas-entre-as-geracoes-e-seu-impacto-no-ambiente-profissional">https://www.jornaldepomerode.com.br/diferencas-entre-as-geracoes-e-seu-impacto-no-ambiente-profissional</a>. Acesso em: 12 set. 2025.</li>
+      <li>Disponível em: <a href="https://consumidormoderno.com.br/geracoes-tecnologia/">https://consumidormoderno.com.br/geracoes-tecnologia/</a>. Acesso em: 12 set. 2025.</li>
+      <li>LEMOS, Verônica Schielke. O BRINCAR E SUAS MUDANÇAS NA ATUALIDADE. Disponível em: <a href="https://repositorio.uniceub.br/jspui/bitstream/123456789/2649/2/20410109.pdf">https://repositorio.uniceub.br/jspui/bitstream/123456789/2649/2/20410109.pdf</a>. Acesso em: 12 set. 2025.</li>
+      <li>Establishing a secure connection. Disponível em: <a href="https://www.scielo.br/j/pp/a/7BTqTrNyNcZjPfKtGM3xQxH/?format=html&lang=pt">https://www.scielo.br/j/pp/a/7BTqTrNyNcZjPfKtGM3xQxH/?format=html&lang=pt</a>. Acesso em: 12 set. 2025.</li>
+      <li>Oliveira, V. C. (2012). <i>Memórias da infância: o brincar e outros afazeres</i>. UFT.</li>
+      <li>Campos, H. R., & Castro, F. (2010). <i>Brincadeiras, jogos e culturas da infância</i>. Psicologia em Pesquisa.</li>
+      <li>Araújo, R. A. (2009). <i>A cultura lúdica e a infância</i>. UFPE.</li>
+      <li>Gomes, A. L. (2007). <i>Infância e práticas sociais</i>. UniCEUB.</li>
+      <li>MIT Tech Review Brasil. <i>A mudança no comportamento das gerações</i>.</li>
+      <li>Lattine Group. <i>Tecnologia em diferentes gerações</i>.</li>
+      <li>Consumidor Moderno. <i>As gerações e a tecnologia</i>.</li>
+      <li>Edupulses. <i>As diferentes gerações e suas características</i>.</li>
+      <li>Jornal de Pomerode. <i>Diferenças entre as gerações e seu impacto</i>.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Entre Brincadeiras e Memórias</p>
+    <p>Grupo: Gabriel Felipe Reichert, Kalyane Clen, Kelly Cristina Batista, Luísa Gabriela Baggio, Raquel Sofia Weirich e Fábio Guzzo</p>
+  </footer>
+
+  <script>
+    const carouselImages = document.querySelector(".carousel-images");
+    const images = document.querySelectorAll(".carousel-images img");
+    const prevBtn = document.getElementById("prev");
+    const nextBtn = document.getElementById("next");
+    let index = 0;
+
+    function showImage(idx) {
+      const width = images[0].clientWidth;
+      carouselImages.style.transform = `translateX(${-width * idx}px)`;
+    }
+
+    nextBtn.addEventListener("click", () => {
+      index = (index + 1) % images.length;
+      showImage(index);
+    });
+
+    prevBtn.addEventListener("click", () => {
+      index = (index - 1 + images.length) % images.length;
+      showImage(index);
+    });
+
+    window.addEventListener("resize", () => showImage(index));
+  </script>
+</body>
+</html>
+
